@@ -1,0 +1,15 @@
+package com.ohgiraffers.level02.normal;
+
+public class Application2 {
+    public static void main(String[] args) {
+        float kor = 80.5f;
+        float math = 50.6f;
+        float eng = 70.8f;
+
+        int sum = (int)(kor+math+eng);
+
+        System.out.println("총점: "+ sum);
+        System.out.println("평균: "+ sum/3);
+    }
+}
+
