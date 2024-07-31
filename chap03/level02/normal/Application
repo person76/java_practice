@@ -1,0 +1,12 @@
+package com.greedy.level02.normal;
+
+public class Application {
+    public static void main(String[] args) {
+        RandomMaker rr = new RandomMaker();
+        System.out.println(rr.randomNumber(-50,50));
+        System.out.println(rr.randomUpperAlphabet(10));
+        System.out.println(rr.rockPaperScissors());
+        System.out.println(rr.tossCoin());
+
+    }
+}
