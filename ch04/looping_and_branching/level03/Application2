@@ -1,0 +1,30 @@
+package com.ohgiraffers.section01.conditional.level03.hard2;
+
+import java.util.Scanner;
+
+public class Application2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int random = (int)(Math.random()*100)+1;
+  //      System.out.println(random);
+        int cnt= 1;
+        while(true) {
+            System.out.println("정수를 하나 입력하세요: ");
+            int num = scanner.nextInt();
+
+            if(num>random){
+                System.out.println("입력하신 정수보다 작습니다.");
+            }
+            else if(num<random){
+                System.out.println("입력하신 정수보다 큽니다.");
+            }
+            else{
+                System.out.println("정답입니다. "+ cnt+"회 만에 정답을 맞추셨습니다.");
+                break;
+            }
+            cnt++;
+
+
+        }
+    }
+}
