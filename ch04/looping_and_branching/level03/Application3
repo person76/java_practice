@@ -1,0 +1,31 @@
+package com.ohgiraffers.section02.looping_and_branching.level03.hard2;
+
+import java.util.Scanner;
+
+public class Application3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("문자열 입력: ");
+        String str = scanner.next();
+
+        System.out.println("문자 입력: ");
+        char ch = scanner.next().charAt(0);
+
+        int cnt=0;
+        boolean isWord = true;
+        for(int i=0; i<str.length(); i++){
+            if(!(str.charAt(i)>='A' && str.charAt(i)<='Z') &&
+                    !(str.charAt(i)>='a' && str.charAt(i)<='z')) {
+                System.out.println("영문자가 아닌 문자가 포함되어 있습니다.");
+                isWord = false;
+                break;
+            }
+            if(ch==str.charAt(i)) cnt++;
+        }
+
+        if(isWord){
+            System.out.println("포합된 갯수: "+cnt);
+        }
+    }
+
+}
