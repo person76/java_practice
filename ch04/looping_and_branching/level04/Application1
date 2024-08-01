@@ -1,0 +1,27 @@
+package com.ohgiraffers.section02.loop.level04.advanced;
+
+import java.util.Scanner;
+
+public class Application1 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("문자열을 입력하세요 : ");
+            String str = scanner.next();
+            System.out.println("숫자를 입력하세요 :");
+            int num = scanner.nextInt();
+
+            while(num>26){
+                num-=26;
+            }
+
+            for(int i=0; i<str.length(); i++){
+                char ch =(char) (str.charAt(i) + num);
+                while(!((ch >= 'a' && ch <='z') || ch >= 'A' && ch<= 'Z' )) {
+                    ch = (char) (ch - 26);
+                }
+                System.out.print(ch+ " ");
+            }
+
+        }
+
+}
