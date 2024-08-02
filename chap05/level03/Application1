@@ -1,0 +1,27 @@
+package com.ohgiraffers.level03.hard;
+
+import java.util.Scanner;
+
+public class Application1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("홀수인 양의 정수를 입력하세요 : ");
+        int num = scanner.nextInt();
+        int []arr = new int[num];
+        if(num<=0 || num%2!=1){
+            System.out.println("양수 또는 홀수만 입력해야 합니다.");
+        }
+        else{
+            for(int i=0; i<num/2+1; i++){
+                arr[i]=i+1;
+            }
+            for(int i=num/2+1; i<num; i++){
+                arr[i] = num-i;
+            }
+            for(int i=0; i<num; i++){
+                System.out.print(arr[i]+ " ");
+            }
+        }
+
+    }
+}
