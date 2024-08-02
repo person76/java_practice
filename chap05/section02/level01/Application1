@@ -1,0 +1,13 @@
+package com.ohgiraffers.section02.level01.basic;
+
+public class Application1 {
+    public static void main(String[] args) {
+        int[][] arr = new int[3][4];
+        for(int i=0; i<3; i++){
+            for(int j=1; j<=4; j++){
+                System.out.print(i*4+j+" ");
+            }
+            System.out.println(' ');
+        }
+    }
+}
