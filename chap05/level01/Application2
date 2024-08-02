@@ -1,0 +1,25 @@
+package com.ohgiraffers.level01.basic;
+
+import java.util.Scanner;
+
+public class Application2 {
+    public static void main(String[] args) {
+        String [] arr = new String[5];
+        arr[0] = "딸기";
+        arr[1]="바나나";
+        arr[2] = "복숭아";
+        arr[3]="키위";
+        arr[4]= "사과";
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("0부터 4까지의 정수를 입력하세요: " );
+        int num = scanner.nextInt();
+        if(num<0 || num>4) {
+            System.out.println("준비된 과일이 없습니다.");
+        }
+        else{
+            System.out.println(arr[num]);
+        }
+
+    }
+}
